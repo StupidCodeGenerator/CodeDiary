@@ -38,28 +38,34 @@
             this.textBoxHistory.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxHistory.Location = new System.Drawing.Point(12, 12);
+            this.textBoxHistory.Location = new System.Drawing.Point(14, 17);
+            this.textBoxHistory.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBoxHistory.Multiline = true;
             this.textBoxHistory.Name = "textBoxHistory";
-            this.textBoxHistory.Size = new System.Drawing.Size(761, 372);
+            this.textBoxHistory.ReadOnly = true;
+            this.textBoxHistory.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBoxHistory.Size = new System.Drawing.Size(887, 501);
             this.textBoxHistory.TabIndex = 0;
             // 
             // textBoxInput
             // 
             this.textBoxInput.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxInput.Location = new System.Drawing.Point(12, 390);
+            this.textBoxInput.Location = new System.Drawing.Point(14, 528);
+            this.textBoxInput.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBoxInput.Multiline = true;
             this.textBoxInput.Name = "textBoxInput";
-            this.textBoxInput.Size = new System.Drawing.Size(613, 129);
+            this.textBoxInput.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBoxInput.Size = new System.Drawing.Size(714, 181);
             this.textBoxInput.TabIndex = 1;
             // 
             // buttonOpen
             // 
             this.buttonOpen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonOpen.Location = new System.Drawing.Point(631, 390);
+            this.buttonOpen.Location = new System.Drawing.Point(736, 528);
+            this.buttonOpen.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.buttonOpen.Name = "buttonOpen";
-            this.buttonOpen.Size = new System.Drawing.Size(142, 53);
+            this.buttonOpen.Size = new System.Drawing.Size(166, 75);
             this.buttonOpen.TabIndex = 2;
             this.buttonOpen.Text = "OPEN";
             this.buttonOpen.UseVisualStyleBackColor = true;
@@ -68,9 +74,10 @@
             // buttonSubmit
             // 
             this.buttonSubmit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonSubmit.Location = new System.Drawing.Point(631, 449);
+            this.buttonSubmit.Location = new System.Drawing.Point(736, 612);
+            this.buttonSubmit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.buttonSubmit.Name = "buttonSubmit";
-            this.buttonSubmit.Size = new System.Drawing.Size(142, 70);
+            this.buttonSubmit.Size = new System.Drawing.Size(166, 99);
             this.buttonSubmit.TabIndex = 4;
             this.buttonSubmit.Text = "SUBMIT";
             this.buttonSubmit.UseVisualStyleBackColor = true;
@@ -82,13 +89,15 @@
             // 
             // FormMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(785, 531);
+            this.ClientSize = new System.Drawing.Size(916, 728);
             this.Controls.Add(this.buttonSubmit);
             this.Controls.Add(this.buttonOpen);
             this.Controls.Add(this.textBoxInput);
             this.Controls.Add(this.textBoxHistory);
+            this.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FormMain";
             this.Text = "CodeDiary";
             this.Load += new System.EventHandler(this.FormMain_Load);
