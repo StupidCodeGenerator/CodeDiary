@@ -24,7 +24,6 @@ namespace CodeDiary {
         void textBoxInput_KeyUp(object sender, KeyEventArgs e) {
             if (e.KeyCode == Keys.Enter && e.Modifiers == Keys.Control) {
                 Submit();
-                textBoxInput.Clear();
             }
         }
 
@@ -33,7 +32,7 @@ namespace CodeDiary {
         }
 
         private void Submit() {
-            if (!String.IsNullOrEmpty(textBoxInput.Text)) {
+            if (!String.IsNullOrEmpty(textBoxInput.Text.Trim())) {
                 string newContent = "--" + DateTime.Now.ToString() + "--\r\n";
                 newContent += textBoxInput.Text + "\r\n";
                 textBoxHistory.AppendText(newContent);
@@ -47,6 +46,7 @@ namespace CodeDiary {
                     }
                 }
             }
+            textBoxInput.Clear();
         }
 
         private void buttonOpen_Click(object sender, EventArgs e) {
