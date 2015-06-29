@@ -27,8 +27,6 @@
             this.textBoxHistory = new System.Windows.Forms.TextBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.textBoxInput = new System.Windows.Forms.TextBox();
-            this.buttonOpen = new System.Windows.Forms.Button();
-            this.buttonSubmit = new System.Windows.Forms.Button();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.SuspendLayout();
@@ -56,32 +54,8 @@
             this.textBoxInput.Multiline = true;
             this.textBoxInput.Name = "textBoxInput";
             this.textBoxInput.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxInput.Size = new System.Drawing.Size(714, 181);
+            this.textBoxInput.Size = new System.Drawing.Size(887, 181);
             this.textBoxInput.TabIndex = 1;
-            // 
-            // buttonOpen
-            // 
-            this.buttonOpen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonOpen.Location = new System.Drawing.Point(736, 528);
-            this.buttonOpen.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.buttonOpen.Name = "buttonOpen";
-            this.buttonOpen.Size = new System.Drawing.Size(166, 75);
-            this.buttonOpen.TabIndex = 2;
-            this.buttonOpen.Text = "OPEN";
-            this.buttonOpen.UseVisualStyleBackColor = true;
-            this.buttonOpen.Click += new System.EventHandler(this.buttonOpen_Click);
-            // 
-            // buttonSubmit
-            // 
-            this.buttonSubmit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonSubmit.Location = new System.Drawing.Point(736, 612);
-            this.buttonSubmit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.buttonSubmit.Name = "buttonSubmit";
-            this.buttonSubmit.Size = new System.Drawing.Size(166, 99);
-            this.buttonSubmit.TabIndex = 4;
-            this.buttonSubmit.Text = "SUBMIT";
-            this.buttonSubmit.UseVisualStyleBackColor = true;
-            this.buttonSubmit.Click += new System.EventHandler(this.buttonSubmit_Click);
             // 
             // openFileDialog
             // 
@@ -92,8 +66,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(916, 728);
-            this.Controls.Add(this.buttonSubmit);
-            this.Controls.Add(this.buttonOpen);
             this.Controls.Add(this.textBoxInput);
             this.Controls.Add(this.textBoxHistory);
             this.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -111,8 +83,6 @@
         private System.Windows.Forms.TextBox textBoxHistory;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.TextBox textBoxInput;
-        private System.Windows.Forms.Button buttonOpen;
-        private System.Windows.Forms.Button buttonSubmit;
         private System.Windows.Forms.OpenFileDialog openFileDialog;
         private System.Windows.Forms.SaveFileDialog saveFileDialog;
     }

@@ -15,6 +15,11 @@ namespace CodeDiary {
 
         public FormMain() {
             InitializeComponent();
+            fileName = System.IO.Directory.GetCurrentDirectory() + "\\CodeDiary.txt";
+            try {
+                textBoxHistory.Text = System.IO.File.ReadAllText(fileName);
+            } catch {
+            }
         }
 
         private void FormMain_Load(object sender, EventArgs e) {
@@ -25,10 +30,6 @@ namespace CodeDiary {
             if (e.KeyCode == Keys.Enter && e.Modifiers == Keys.Control) {
                 Submit();
             }
-        }
-
-        private void buttonSubmit_Click(object sender, EventArgs e) {
-            Submit();
         }
 
         private void Submit() {
@@ -47,13 +48,6 @@ namespace CodeDiary {
                 }
             }
             textBoxInput.Clear();
-        }
-
-        private void buttonOpen_Click(object sender, EventArgs e) {
-            if (openFileDialog.ShowDialog() == DialogResult.OK) {
-                textBoxHistory.Text = System.IO.File.ReadAllText(openFileDialog.FileName);
-                this.fileName = openFileDialog.FileName;
-            }
         }
     }
 }
